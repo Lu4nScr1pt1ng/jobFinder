@@ -1,0 +1,36 @@
+ <div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Divulgue a vaga preenchendo o formulario</h1>
+            </div>
+            <div id="form-box" class="col-md-12">
+                <h2>Preencha os dados da melhor forma possivel para encontrar mais rapido seu dev!</h2>
+                <form action="/jobs/add" method="POST">
+                    <div class="form-group">
+                        <label for="title">Título da vaga</label>
+                        <input type="text" id="title"  class="form-control" name="title" placeholder="Digite o titulo da vaga">
+                        <small id="titleHelp" class="form-text text-muted">O título é muito importante</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Descrição da vaga</label>
+                        <textarea type="text" id="description"  class="form-control" name="description" placeholder="Descreva as atividades da area"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Empresa contratante</label>
+                        <input type="text" id="company"  class="form-control" name="company" placeholder="Nome da empresa contratante">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"  class="form-control" name="email" placeholder="Digite o email para contato">
+                    </div>
+                    <div class="form-group">
+                        <label for="salary">Salario da vaga</label>
+                        <input type="text" id="salary"  class="form-control" name="salary" placeholder="Digite o salario para a vaga">
+                    </div>
+                    <input type="hidden" name="new_job" value="1">
+                
+                    <button type="submit" class="btn btn-primary">Enviar respostas</button>
+                </form>
+            </div>
+        </div>
+    </div>
